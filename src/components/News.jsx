@@ -56,14 +56,13 @@ export default function News({ category, searchQuery, setProgress, apiKey }) {
           margin: "2%",
         }}
       >
-        <span className="inline-block animate-color-move bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 via-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 to-indigo-500 bg-[length:400%_400%]"
-        >
-          ACONEWS
-        
-        - Top Headlines
+        <span className="inline-block animate-color-move bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 via-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 to-indigo-500 bg-[length:400%_400%]">
+          ACONEWS - Top Headlines
         </span>
         {category === "general" ? (
-          " From Various Categories"
+          <span className="inline-block animate-color-move ml-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-pink-500 via-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 to-indigo-500 bg-[length:400%_400%]">
+            From Various Categories
+          </span>
         ) : (
           <>
             {" "}
@@ -133,7 +132,8 @@ export default function News({ category, searchQuery, setProgress, apiKey }) {
       </div>
       <style jsx>{`
         @keyframes colorMove {
-          0%, 100% {
+          0%,
+          100% {
             background-position: 0% 50%;
           }
           50% {
