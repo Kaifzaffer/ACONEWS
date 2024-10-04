@@ -1,4 +1,4 @@
-# NEWS247
+#ACONEWS
 
 ACONEWS is a modern, React-based news application that provides users with easy access to top headlines from various categories. Leveraging the power of GNewsAPI, this app delivers a seamless and intuitive news browsing experience.
 
